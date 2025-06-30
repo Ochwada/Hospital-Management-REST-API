@@ -1,4 +1,4 @@
-package com.example.hospitalmngt;
+package com.example.hospital;
 
 
 import io.github.cdimascio.dotenv.Dotenv;
