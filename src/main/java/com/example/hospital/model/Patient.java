@@ -15,7 +15,7 @@ import jakarta.persistence.*;
  */
 
 @Entity
-@Table(name = "patient")
+@Table(name = "patients")
 public class Patient {
 
     /**
@@ -39,7 +39,7 @@ public class Patient {
     /**
      * Total bill amount for the patient's treatment
      */
-    private double billAmount;
+    private double bill_amount;
 
     /**
      * The doctor assigned to this patient.
@@ -62,18 +62,18 @@ public class Patient {
      *
      * @param name           the full name of the patient
      * @param diagnosis      the medical diagnosis for the patient
-     * @param billAmount     the total cost of treatment
+     * @param bill_amount     the total cost of treatment
      * @param assignedDoctor the doctor assigned to this patient
      */
-    public Patient(String name, String diagnosis, double billAmount, Staff assignedDoctor) {
+    public Patient(String name, String diagnosis, double bill_amount, Staff assignedDoctor) {
         this.name = name;
         this.diagnosis = diagnosis;
-        this.billAmount = billAmount;
+        this.bill_amount = bill_amount;
         this.assignedDoctor = assignedDoctor;
     }
 
     //----------------- Getters and Setters -----------------
-    
+
     public Long getId() {
         return id;
     }
@@ -98,12 +98,12 @@ public class Patient {
         this.diagnosis = diagnosis;
     }
 
-    public double getBillAmount() {
-        return billAmount;
+    public double getBill_amount() {
+        return bill_amount;
     }
 
-    public void setBillAmount(double billAmount) {
-        this.billAmount = billAmount;
+    public void setBill_amount(double bill_amount) {
+        this.bill_amount = bill_amount;
     }
 
     public Staff getAssignedDoctor() {
