@@ -13,12 +13,13 @@ package com.example.hospital.repo;
  */
 
 
+import java.util.List;
+
 import com.example.hospital.model.Patient;
 import com.example.hospital.sql.PatientQuery;
+
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
-
-import java.util.List;
 
 /**
  * This class is responsible for executing custom employee queries defined in the {@link PatientQuery}
