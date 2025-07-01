@@ -20,12 +20,14 @@ import com.example.hospital.sql.PatientQuery;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
+import org.springframework.stereotype.Repository;
 
 /**
  * This class is responsible for executing custom employee queries defined in the {@link PatientQuery}
  * enum, with optional parameter binding. The implementation typically uses {@code EntityManager} for
  * executing native SQL queries that are not directly handled by Spring Data JPA.
  */
+@Repository
 public class PatientRepositoryCustomImpl implements PatientRepositoryCustom {
 
     /**

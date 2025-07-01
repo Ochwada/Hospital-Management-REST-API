@@ -35,7 +35,7 @@ public class Staff {
     /**
      * Role assigned to the staff member (e.g., DOCTOR, NURSE, ADMIN)
      */
-    @Column
+    @Enumerated(EnumType.STRING)
     private Role role;
 
     /**
